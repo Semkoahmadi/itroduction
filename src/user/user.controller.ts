@@ -5,8 +5,7 @@ import { EmailValidatorPipe } from "./email.pipe";
 
 @Controller("/user")
 export class UserController {
-    constructor(
-        private userService: UserService) { }
+    constructor(private userService: UserService) {}
     @Get()
     find() {
         return this.userService.find();
